@@ -1,0 +1,67 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   style.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kahmada <kahmada@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/05 18:04:18 by kahmada           #+#    #+#             */
+/*   Updated: 2024/05/05 21:43:45 by kahmada          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(192, 189, 187);
+}
+.calculatrice{
+    position: relative;
+    display: grid;
+}
+.calculatrice .value{
+    grid-column: span 4 ;
+    height: 100px;
+    text-align: right;
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+    outline: 0;
+}
+.calculatrice span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: azure;
+    background-color: rgb(24, 24, 26);
+    place-items: center;
+    border: 1px solid rgb(194, 190, 190);
+    cursor: pointer;
+}
+.calculatrice span:avtive{
+    background-color: aqua;
+    color: black;
+    
+}
+.calculatrice span.effacer{
+    grid-column: span 2;
+    width: 100%;
+    background-color: rgb(232, 171, 49);
+    
+}
+.calculatrice span.plus{
+    grid-row: span 2;
+    height: 100%;
+}
+.calculatrice span.egale{
+    background-color: rgb(204, 91, 69);
+}
